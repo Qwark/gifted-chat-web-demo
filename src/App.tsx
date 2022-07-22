@@ -34,7 +34,8 @@ const App: React.FC = () => {
   const { width, height } = Dimensions.get('window')
   return (
     <View style={{ width, height }}>
-      <GiftedChat {...{ messages, onSend, user, inverted }} />
+      <GiftedChat renderUsernameOnMessage={true}
+          {...{ messages, onSend, user, inverted }} />
     </View>
   )
 }
